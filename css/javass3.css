@@ -1,0 +1,102 @@
+body{
+    background-color: rgb(247,236,222);   
+}
+
+h1 {
+    font-family: "Pacifico", cursive;
+    margin-top: 5%;
+    text-align: center;
+    font-size: 2.8em;
+    position: relative;
+    overflow: hidden;
+}
+
+h1::before {
+    content: "";
+    position: absolute;
+    width: 25%;
+    height: 25%;
+    left: 0;
+    bottom: 0;
+    margin-left: 37%;
+    transition: height 0.3s; /* Corrected 'heigh' to 'height' */
+    z-index: -1;
+    background-color: #fec260;
+}
+
+h1:hover::before {
+    height: 100%;
+}
+
+.dotted-line {
+    
+        border: none; 
+        border-top: 2px dotted black; 
+        margin-top: 10px; 
+        margin-bottom: 20px;
+         
+        width: 95%;
+        border-color: black; 
+
+    
+    
+  }
+
+.num2{
+    text-align: center;
+    font-size: 1.8em;
+   font-family: "righteous",cursive;
+   
+  }
+
+  .gradient-text {
+    background: linear-gradient(to right, rgb(63, 165, 92), rgb(110, 168, 84), rgb(178, 172, 73));
+    background-clip: text;
+    color: transparent;
+    display: inline-block;
+  }
+  .bookmark-icon {
+    font-size: 30px; /* Icon font size */
+    color: rgb(62,165,91);
+    margin-top: -3.5%;
+    margin-left: 30%;
+  }
+  
+
+.form-control{
+    height: 1% !important;
+    padding: .375rem .75rem;
+}
+.site{
+    margin-top: 3%;
+    margin-left: 2.5%;
+    font-size: 1.2em;
+}
+.bookicon{
+    margin-left: -2%;
+} 
+.url{
+    font-size: 1.2em;
+    margin-left: 2.5%;
+}
+.urlicon{
+    margin-left: -2%;
+}
+.btn {
+    width: 15%; 
+    margin-left: 42%;
+    background-color: rgb(209,81,45);
+    border-color: rgb(209,81,45);
+   
+}
+.btn:hover{
+    background-color: rgb(165, 55, 24);
+    border-color: rgb(165, 55, 24);
+}
+.del{
+    margin-right: 7%;
+}
+.index{
+    margin-left: 6%;
+}
+  

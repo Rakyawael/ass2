@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="./css/bootstrap.min.css">
+        <link rel="stylesheet" href="./css/javass3.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+
+    </head>
+    <body>
+        <div class="container">
+        <h1 class="bookmark">Bookmarker</h1>
+        <br>
+        <hr class="dotted-line ">
+        <h2 class="num2" id="gradientText">
+             Bookmark your favorite sites
+          </h2>
+          <!-- //I tried to put the i insed the h2 it didnt appear i dont know why// -->
+          <i class="fas fa-bookmark bookmark-icon"></i>
+         
+          
+          <h3 class="site">
+            <i class="fas fa-book bookicon"></i>
+              site name</h3>
+            <div class="form-floating mb-3 ">
+                <input oninput="validationname()" type="text" class="form-control" id="productname" placeholder="name" >
+                <label for="floatingInput">Bookmark name</label>
+                <p id="message1" class="alert alert-danger d-none"> 
+                    Invalid site name. Please use only letters, numbers, or underscores (_). Spaces and special characters are not allowed.
+                </p>
+              </div>
+              <br>
+              <h3 class="url">
+                <i class="fas fa-link urlicon"></i>
+                site URL</h3>
+              <div class="form-floating mb-3">
+                <input oninput="validationurl()" type="text" class="form-control" id="producturl" placeholder="price" >
+                <label for="floatingPassword">Website URL</label>
+                <p id="message2" class="alert alert-danger d-none">
+                  invalid url
+                </p>
+              </div>
+
+              <div class="col-auto sumbit">
+                <button onclick="addproduct();" type="submit" class="btn btn-primary ">Submit</button>
+              </div>
+
+               <br>
+               <hr class="dotted-line ">
+
+               <div style="background-color: #f8f4eb; padding: 7px; font-family: Arial, sans-serif;">
+                <div style="display: flex; justify-content: space-between; background-color: #f4f8fc; padding: 7px; font-weight: bold; border: 1px solid #ccc;">
+                  <span class="index">Index</span>
+                  <span>Website Name</span>
+                  <span>Visit</span>
+                  <span class="del">Delete</span>
+                </div>
+              </div>
+              
+        </div>
+          
+        
+    
+    <script src="./java/javass3.js"> 
+
+    </script>
+    </body>
+
+</html>
